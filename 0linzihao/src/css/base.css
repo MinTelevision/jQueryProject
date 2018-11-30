@@ -1,0 +1,60 @@
+/* 把边框也量进去再去减就行了 边框会充大本体内容的 
+* @Author: Marte
+* @Date:   2018-07-23 14:40:25
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-11-23 08:52:24
+*/
+/*(1)清除默认样式*/
+*{box-sizing: border-box;}
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,input{ margin:0; padding:0; }
+fieldset, img,input,button { border:0 none; padding:0;margin:0;outline-style:none; }  
+ /*去掉input等聚焦时的蓝色边框*/
+ul,li,ol{ list-style:none; }
+select, input { vertical-align:middle;}
+textarea { resize:none; } /*防止拖动*/
+img {vertical-align:middle; }  
+/*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+table { border-collapse:collapse; }
+a {text-decoration:none; }
+h1,h2,h3,h4,h5,h6 {font-weight:normal;font-size:1em;}/*设置h标签的大小，设置跟父亲一样大的字体font-size:100%;*/
+s,i,em{font-style:normal;text-decoration:none;}
+b{font-weight:normal;}
+
+/*2.添加公共样式*/
+body {
+    font:12px "微软雅黑";
+    color:#000;
+    background-color: #FEFEFE;
+
+}
+
+/*公共类*/
+.container {  /*内容、版心 提取 */
+    width: 1500px;
+    margin:0 auto;
+}
+.fl {
+    float:left;
+}
+.fr {
+    float:right;
+}
+.ac {
+    text-align:center;
+}
+.hide {
+    display:none;
+}
+.f12{ font-size: 12px;}
+.f14{ font-size: 14px;}
+.f16{ font-size: 16px;}
+
+.clearfix::after{
+    content: "";
+    display:block;
+    height: 0;
+    clear:both;
+    overflow: hidden;
+    visibility: hidden;
+}
+

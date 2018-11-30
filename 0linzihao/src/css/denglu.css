@@ -1,0 +1,99 @@
+#top{
+    border-bottom: 1px solid #DCDCDC;
+}
+#top .container{
+    height: 151px;
+    padding-top: 44px;
+    font-size: 18px;
+}
+#top .container p{
+    margin-top: 10px;
+}
+#top .container p a{
+    font-size: 20px;
+    margin-right: 10px;
+    color:#989898;
+}
+#top .container p a:hover{
+    text-decoration:underline;
+    color:red;
+}
+#main{
+    height: 785px;
+    position: relative;
+}
+#main .denglu{
+    position: absolute;
+    width: 460px;
+    height: 506px;
+    background-color: #FEFEFE;
+    top:141px;
+    right:500px;
+    padding-top: 41px;
+    padding-left: 46px;
+    padding-right: 40px;
+}#main .denglu ul{
+    margin-bottom: 24px;
+}
+#main .denglu>ul>li{
+    float: left;
+    height: 45px;
+    width: 185px;
+    border-bottom: 1px solid #31CA98;
+    line-height: 45px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+#main .denglu #username,#password,#btn{
+    width: 370px;
+    height: 59px;
+    padding-left: 21px;
+    line-height: 59px;
+    border:1px solid #DCDCDC;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+#btn{
+    padding: 0;
+    border:0;
+    font-size: 24px;
+    margin-top: 28px;
+    background: #31CA98;
+    color:#fff;
+    border-radius:8px;
+    cursor:pointer;
+}
+#btn:hover{
+    background-color: #62D9B3;
+}
+#main .denglu>p{
+    font-size: 18px;
+}
+#main .denglu>p>input{
+    margin-right: 16px;
+    margin-top: 6px;
+}
+#main .denglu>ul>li:nth-child(2){
+    color:#98A4C1;
+    border-color:#DCDCDC;
+}
+#bottom{
+    border-top: 1px solid #DCDCDC;
+    height: 500px;
+    text-align: center;
+    padding-top: 93px;
+}
+#bottom a{
+    font-size: 14px;
+    color:#989898;
+    padding-right: 12px;
+    padding-left: 12px;
+    border-right:1px solid #989898;
+}
+#bottom a:hover{
+    color:red;
+}
+#bottom p{
+    margin-bottom: 15px;
+}
